@@ -17,6 +17,7 @@
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(BOARD_VENDOR),oppo)
+ifeq ($(TARGET_CAF_IDENTIFIER),)
 ifeq ($(TARGET_BOARD_PLATFORM),msm8974)
 
 ifeq ($(QCPATH),)
@@ -134,6 +135,7 @@ include $(BUILD_PREBUILT)
 
 endif
 
+endif
 endif
 endif
 
